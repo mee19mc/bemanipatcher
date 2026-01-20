@@ -14,29 +14,21 @@
                         patches: [{ offset: 0xF84BF, off: [0x0F, 0x85], on: [0x90, 0xE9] }],
                     },
                     {
-                        name: "Stage Freeze",
-                        patches: [{ offset: 0x10FA16, off: [0x0F, 0x85], on: [0x90, 0xE9] }],
+                        name: "Premium Timer Freeze",
+                        patches: [{ offset: 0x118B92, off: [0xFF, 0xC9], on: [0x90, 0x90] }],
                     },
                     {
                         name: "Skip Tutorial",
-                        patches: [{ offset: 0xDB3AA, off: [0x0F, 0x87], on: [0x90, 0xE9] }],
-                    },
-                    {
-                        name: "Unlock all songs",
-                        patches: [
-                            { offset: 0x1BDE32, off: [0x61, 0x00], on: [0x4D, 0x01] },
-                            { offset: 0x1BDE4A, off: [0x63, 0x00], on: [0x4D, 0x01] },
-                            { offset: 0x1179B3, off: [0x75, 0x08], on: [0xEB, 0x11] },
-                        ]
+                        patches: [{ offset: 0xE8F2A, off: [0x0F, 0x87], on: [0x90, 0xE9] }],
                     },
                     {
                         name: "Enable Long Music",
-                        patches: [{ offset: 0x117A64, off: [0x74], on: [0xEB] }],
+                        patches: [{ offset: 0x12C444, off: [0x74], on: [0xEB] }],
                     },
                     {
                         name: "Skip 'NOW DATA INITIALIZING'",
                         tooltip: "Useful for testing only",
-                        patches: [{ offset: 0x347EE, off: [0x0F, 0x84, 0x74, 0x01, 0x00, 0x00], on: [0x90, 0x90, 0x90, 0x90, 0x90, 0x90] }],
+                        patches: [{ offset: 0x3497D, off: [0x0F, 0x84, 0x74, 0x01, 0x00, 0x00], on: [0x90, 0x90, 0x90, 0x90, 0x90, 0x90] }],
                     },
                 ]),
                 new Patcher("game.dll", "2024-03-13", [
@@ -85,3 +77,4 @@
 
 
 </html>
+
